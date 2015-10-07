@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA65B7A4-547E-49CA-ABFC-B1ADA3ED0A8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluentInterface.Examples</RootNamespace>
+    <AssemblyName>FluentInterface.Examples</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BalticAmadeus.Container, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BalticAmadeus.Container.1.0.0.0\lib\net451\BalticAmadeus.Container.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BalticAmadeus.FluentMdx, Version=1.0.5750.30055, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BalticAmadeus.FluentMdx.1.0.5750.30055\lib\net45\BalticAmadeus.FluentMdx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidation, Version=5.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.5.6.2.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AdvancedFirstServiceDecorator.cs" />
+    <Compile Include="BaContainerConfigurationExample.cs" />
+    <Compile Include="Classes\ComplexFirstServiceDecorator.cs" />
+    <Compile Include="Classes\FirstService.cs" />
+    <Compile Include="Classes\FifthService.cs" />
+    <Compile Include="Classes\ForthService.cs" />
+    <Compile Include="Classes\IAdditionalSecondService.cs" />
+    <Compile Include="Classes\IFifthService.cs" />
+    <Compile Include="Classes\IFirstService.cs" />
+    <Compile Include="Classes\IForthService.cs" />
+    <Compile Include="Classes\ISecondService.cs" />
+    <Compile Include="Classes\IThirdService.cs" />
+    <Compile Include="Classes\LoggingProxy.cs" />
+    <Compile Include="Classes\SecondService.cs" />
+    <Compile Include="Classes\SimpleFirstServiceDecorator.cs" />
+    <Compile Include="Classes\ThirdService.cs" />
+    <Compile Include="Classes\ThirdServiceFactory.cs" />
+    <Compile Include="TimeSpanExtensionsExample.cs" />
+    <Compile Include="FluentMdxExample.cs" />
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\CustomerRepository.cs" />
+    <Compile Include="FluentValidationExample.cs" />
+    <Compile Include="LinqExample.cs" />
+    <Compile Include="PoemExample.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
