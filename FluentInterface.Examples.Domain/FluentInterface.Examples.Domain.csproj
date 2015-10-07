@@ -57,26 +57,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arrangement\Domain\Address.cs" />
-    <Compile Include="Arrangement\Domain\Client.cs" />
-    <Compile Include="Arrangement\Domain\ClientsRepositoryInMemory.cs" />
-    <Compile Include="Arrangement\Domain\Email.cs" />
-    <Compile Include="Arrangement\Domain\EmailMessage.cs" />
-    <Compile Include="Arrangement\Domain\IClientsRepository.cs" />
-    <Compile Include="Arrangement\Domain\IMailService.cs" />
-    <Compile Include="Arrangement\Domain\IOrdersRepository.cs" />
-    <Compile Include="Arrangement\Domain\IStorageItemsRepository.cs" />
-    <Compile Include="Arrangement\Domain\MailService.cs" />
-    <Compile Include="Arrangement\Domain\Order.cs" />
-    <Compile Include="Arrangement\Domain\OrderLine.cs" />
-    <Compile Include="Arrangement\Domain\OrderRepositoryInMemory.cs" />
-    <Compile Include="Arrangement\Domain\OrdersService.cs" />
-    <Compile Include="Arrangement\Domain\OrderStatus.cs" />
-    <Compile Include="Arrangement\Domain\Product.cs" />
-    <Compile Include="Arrangement\Domain\Shop.cs" />
-    <Compile Include="Arrangement\Domain\StorageItem.cs" />
-    <Compile Include="Arrangement\Domain\StorageItemsRepositoryInMemory.cs" />
-    <Compile Include="Arrangement\OrdersServiceTests.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientsRepositoryInMemory.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="EmailMessage.cs" />
+    <Compile Include="IClientsRepository.cs" />
+    <Compile Include="IMailService.cs" />
+    <Compile Include="IOrdersRepository.cs" />
+    <Compile Include="IStorageItemsRepository.cs" />
+    <Compile Include="MailService.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderLine.cs" />
+    <Compile Include="OrderRepositoryInMemory.cs" />
+    <Compile Include="OrdersService.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="StorageItem.cs" />
+    <Compile Include="StorageItemsRepositoryInMemory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

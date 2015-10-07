@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaContainer\BaContainerExampleTests.cs" />
+    <Compile Include="BaContainerExampleTests.cs" />
     <Compile Include="CustomerRepositoryTests.cs" />
     <Compile Include="DomainBuilders\MutatingOrderBuilder.cs" />
     <Compile Include="DomainBuilders\PatchingOrderBuilder.cs" />
