@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FluentInterface.Examples.Domain.Address">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FluentInterface.Examples.Domain.Client">
+    <Position X="6.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABCAEAAACAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Emails" />
+      <Field Name="Addresses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FluentInterface.Examples.Domain.Email">
+    <Position X="3.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FluentInterface.Examples.Domain.Order">
+    <Position X="6.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAiAAAEEAACAAAAAAAAAAAAAACAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Initiator" />
+      <Field Name="Status" />
+      <Field Name="Shop" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="OrderLines" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FluentInterface.Examples.Domain.OrderLine">
+    <Position X="3.75" Y="3" Width="1.75" />
+    <AssociationLine Name="Product" Type="FluentInterface.Examples.Domain.Product" FixedToPoint="true">
+      <Path>
+        <Point X="4.812" Y="4.103" />
+        <Point X="4.812" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>OrderLine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FluentInterface.Examples.Domain.Product">
+    <Position X="3.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FluentInterface.Examples.Domain.Shop">
+    <Position X="10.25" Y="3" Width="2" />
+    <AssociationLine Name="Address" Type="FluentInterface.Examples.Domain.Address" FixedFromPoint="true">
+      <Path>
+        <Point X="10.812" Y="3" />
+        <Point X="10.812" Y="2.18" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAACAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Shop.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Address" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FluentInterface.Examples.Domain.StorageItem">
+    <Position X="0.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>StorageItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="FluentInterface.Examples.Domain.IClientsRepository" Collapsed="true">
+    <Position X="10.25" Y="6.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAIA=</HashCode>
+      <FileName>IClientsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FluentInterface.Examples.Domain.IOrdersRepository" Collapsed="true">
+    <Position X="10.25" Y="6" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAIAAABAAAAQAAQAAAIA=</HashCode>
+      <FileName>IOrdersRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FluentInterface.Examples.Domain.IStorageItemsRepository" Collapsed="true">
+    <Position X="10.25" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAA=</HashCode>
+      <FileName>IStorageItemsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="FluentInterface.Examples.Domain.OrderStatus">
+    <Position X="6.75" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAQAAACAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>OrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

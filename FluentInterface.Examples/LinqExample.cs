@@ -28,29 +28,22 @@ namespace FluentInterface.Examples
 
         public static string ParseStringNonFluent(string str)
         {
-            string loweredString = str.ToLower();
-
-            string normalizedString = loweredString.Normalize();
-
-            string trimmedString = normalizedString.Trim();
+            string trimmedString = str.ToLower().Normalize().Trim();
 
             string aggregatedString = string.Empty;
 
             foreach (var chr in trimmedString)
             {
-                if (char.IsLetterOrDigit(chr))
-                {
-                    if (IsSpecialChar(chr))
-                    {
-                        string stringChar = chr.ToString();
-                        aggregatedString = string.Concat(aggregatedString, stringChar);
-                    }                    
-                }
+                if (!char.IsLetterOrDigit(chr))
+                    continue;
+
+                if (!IsSpecialChar(chr))
+                    continue;
+                    
+                aggregatedString = string.Concat(aggregatedString, chr.ToString());                        
             }
 
-            string upperedString = aggregatedString.ToUpper();
-
-            return upperedString;
+            return aggregatedString.ToUpper();
         }
     }
 }

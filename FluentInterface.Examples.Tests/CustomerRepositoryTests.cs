@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using FluentInterface.Examples.Classes;
 using NUnit.Framework;
 
 namespace FluentInterface.Examples.Tests
