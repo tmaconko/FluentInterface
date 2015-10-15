@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="BaContainerExampleTests.cs" />
     <Compile Include="CustomerRepositoryTests.cs" />
+    <Compile Include="DemoDomainBuilders\DemoMutatingOrderBuilder.cs" />
     <Compile Include="DomainBuilders\MutatingOrderBuilder.cs" />
     <Compile Include="DomainBuilders\PatchingOrderBuilder.cs" />
     <Compile Include="OrdersServiceTests.cs" />
@@ -68,6 +69,9 @@
       <Project>{fa65b7a4-547e-49ca-abfc-b1ada3ed0a8c}</Project>
       <Name>FluentInterface.Examples</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
